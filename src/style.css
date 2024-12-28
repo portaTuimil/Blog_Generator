@@ -4,18 +4,17 @@
 }
 
 @font-face {
-    font-family: Robotos;
+    font-family: RobotoRegular;
     src: url(../assets/fonts/Roboto-Regular.ttf);
 }
 
 :root{
-    --primary-color: #0a121c;
-    --secondary-color: #ffffff;
-    --terciary-color:#ffffff;
-    --text-color: #deddd0;
-    --text-secondary-color: #818181;
-    --sb-thumb-color: #232E33;
-    font-family: Robotos;
+    --light-grey: #1e1e1e;
+    --dark-grey: #121212;
+    --link-blue:#6f87bf;
+    --light-beige: #deddd0;
+    --dark-beige: #818181;
+    --darker-beige: #282725;
 }
 
 *{
@@ -25,9 +24,10 @@
     list-style-type: none;
     text-decoration: none;
     scrollbar-width: auto;
-    scrollbar-color: #232e33 #0a121c;
-    color: var(--text-color);
-    background-color: #1e1e1e;
+    scrollbar-color: var(--light-grey) var(--dark-grey);
+    color: var(--light-beige);
+    font-family: RobotoRegular;
+    background-color: #121212;
 }
 
 
@@ -38,13 +38,13 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--primary-color);
+    background: var(--dark-grey);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--sb-thumb-color);
+    background-color: var(--light-grey);
     border-radius: 14px;
-    border: 0px none var(--primary-color);
+    border: 0px none var(--dark-grey);
 }
 
 
@@ -54,17 +54,26 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 1.2rem;
-}
-
-nav{
-    padding: 20px;
+    font-size: 1.1rem;
+    padding-top: 60px;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
     margin: 0 15%;
+    font-family: Roboto;
+}
+
+.header > *{
+    color: var(--dark-beige);
+}
+
+.headerSpan{
+    color: var(--link-blue);
+}
+.headerSpan:hover{
+    text-decoration: underline;
 }
 
 .date, .blogLink{
@@ -77,6 +86,8 @@ nav{
 
 .dateData{
     font-size: 1.1rem;
+    font-family: Roboto;
+    color: var(--dark-beige);
 }
 
 .title{
@@ -85,7 +96,32 @@ nav{
 }
 
 .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 100%;
     padding: 30px 15%;
     height: 100vh;
+    line-height: 1.6;
+    color: white;
+}
+
+
+
+/* ---------- Styles ---------- */
+
+code{
+    margin-left: -1%;
+    border-radius: 20px;
+    padding: 10px 15px;
+
+    width: 102%;
+    display: block;
+    background-color: var(--darker-beige);
+}
+
+sl{
+    background-color: var(--darker-beige);
+    padding: 2px 4px;
+    border-radius: 4px;
 }

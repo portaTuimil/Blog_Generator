@@ -7,11 +7,12 @@ const dateData = document.querySelector(".dateData");
 
 
 async function retrieveArticle(title) {
-    const response = await fetch(`./src/articles/${title}.json`);
-    const json = await response.json();
-    titleDiv.innerText = json.title;
-    mainDiv.innerText = json.spanish;
-    dateData.innerText = json.date;
+    const response = await fetch(`./src/articles/${title}.md`);
+    const text = await response.text();
+    let valueArr = text.split("///");
+    titleDiv.innerText = valueArr[0];
+    dateData.innerText = valueArr[1];
+    mainDiv.innerHTML = valueArr[2];
 }
 
 retrieveArticle(urlParams.get("t"));

@@ -1,0 +1,1 @@
+On this blog and it's architecture:///December 12, 2024///
