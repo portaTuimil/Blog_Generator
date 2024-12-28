@@ -1,7 +1,12 @@
 @font-face {
     font-family: Roboto;
     src: url(../assets/fonts/Roboto-Bold.ttf);
-  }
+}
+
+@font-face {
+    font-family: Robotos;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
 
 :root{
     --primary-color: #0a121c;
@@ -10,7 +15,7 @@
     --text-color: #deddd0;
     --text-secondary-color: #818181;
     --sb-thumb-color: #232E33;
-    font-family: Roboto;
+    font-family: Robotos;
 }
 
 *{
@@ -56,8 +61,27 @@ nav{
     padding: 20px;
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15%;
+}
+
+.date, .blogLink{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    font-family: Roboto;
+}
+
+.dateData{
+    font-size: 1.1rem;
+}
+
 .title{
-    margin-left: 15%;
+    margin: 0 15%;
+    font-family: Roboto;
 }
 
 .content{

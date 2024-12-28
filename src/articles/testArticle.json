@@ -1,7 +1,5 @@
 {
-    "testArticle": [
-            {
-            "spanish": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum molestie cursus. Proin tempus ex sed est porttitor, nec vestibulum odio ultrices. Nunc ultricies purus arcu, eget suscipit diam ullamcorper ac. Donec ullamcorper venenatis augue, sit amet aliquam dui dignissim eu. Curabitur vel arcu vel enim ultrices lacinia. Vestibulum ultrices lobortis semper."
-        }
-    ]
+    "title":"JS functions and other problems:",
+    "date": "A 27 de diciembre del 2024",
+    "spanish": "El hombre ha nacido libre y, sin embargo, por todas partes se encuentra encadenado. Tal cual se cree el amo de los demás, cuando, en verdad, no deja de ser tan esclavo como ellos. \n \n ¿Qué puede hacer este camino legítimo? La sociedad más antigua (y la única natural) es la familia. Esta se mantiene unida por supervivencia y, cuando ya no es necesaria, la unión entre sus miembros no sigue vigente sino por conveniencia. Lo que distingue familia y Estado es que en la familia el amor del padre por sus hijos le remunera los cuidados que les presta, mientras que en el Estado el placer de mando sustituye a este amor que el jefe no siente por sus pueblos."
 }

@@ -1,10 +1,17 @@
 const url = window.location.search;
 const urlParams = new URLSearchParams(url);
-console.log(urlParams)
+const titleDiv = document.querySelector(".title");
+const mainDiv = document.querySelector(".content");
+const header = document.querySelector(".header");
+const dateData = document.querySelector(".dateData");
 
-async function retrieveArticle(name) {
-    const response = await fetch(`https://raw.githubusercontent.com/portaTuimil/Blog_Generator/refs/heads/master/src/articles/testArticle.txt`)
-    console.log(response)
+
+async function retrieveArticle(title) {
+    const response = await fetch(`./src/articles/${title}.json`);
+    const json = await response.json();
+    titleDiv.innerText = json.title;
+    mainDiv.innerText = json.spanish;
+    dateData.innerText = json.date;
 }
 
-retrieveArticle("hi");
+retrieveArticle(urlParams.get("t"));
