@@ -1,1 +1,1 @@
-On this blog and it's architecture:///December 12, 2024///
+On this blog and it's architecture:///December 12, 2024///<p>This article is in progress...</p>
