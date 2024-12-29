@@ -8,6 +8,10 @@
     src: url(../assets/fonts/Roboto-Regular.ttf);
 }
 
+@font-face {
+    font-family: RobotoMono;
+    src: url(../assets/fonts/RobotoMono-VariableFont_wght.ttf);
+}
 :root{
     --light-grey: #1e1e1e;
     --dark-grey: #121212;
@@ -15,6 +19,11 @@
     --light-beige: #deddd0;
     --dark-beige: #818181;
     --darker-beige: #282725;
+    scrollbar-color: var(--light-grey) var(--dark-grey);
+    color: var(--light-beige);
+    font-family: RobotoRegular;
+    background-color: #121212;
+    --standard-margin: 15%;
 }
 
 *{
@@ -24,10 +33,6 @@
     list-style-type: none;
     text-decoration: none;
     scrollbar-width: auto;
-    scrollbar-color: var(--light-grey) var(--dark-grey);
-    color: var(--light-beige);
-    font-family: RobotoRegular;
-    background-color: #121212;
 }
 
 
@@ -61,8 +66,7 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 0 15%;
-    font-family: Roboto;
+    margin: 0 var(--standard-margin);
 }
 
 .header > *{
@@ -70,13 +74,16 @@ body{
 }
 
 .headerSpan{
-    color: var(--link-blue);
-}
-.headerSpan:hover{
-    text-decoration: underline;
+    color: var(--dark-beige);
+    font-family: Roboto;
+    text-decoration: none;
 }
 
-.date, .blogLink{
+.headerSpan:hover{
+    text-decoration: none;
+}
+
+.wrapper, .date, .blogLink{
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -91,21 +98,39 @@ body{
 }
 
 .title{
-    margin: 0 15%;
+    margin: 0 var(--standard-margin);
     font-family: Roboto;
 }
 
 .content{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
-    padding: 30px 15%;
-    height: 100vh;
+    padding: 30px var(--standard-margin);
     line-height: 1.6;
     color: white;
+    margin-bottom: 30px;
 }
 
+@media (max-width: 1500px) {
+    :root {
+        --standard-margin: 10%;
+      }
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --standard-margin: 5%;
+    }
+}
+
+@media (max-width: 950px) {
+    :root {
+    --standard-margin: 2%;
+    }
+}
+  
 
 
 /* ---------- Styles ---------- */
@@ -114,14 +139,30 @@ code{
     margin-left: -1%;
     border-radius: 20px;
     padding: 10px 15px;
-
     width: 102%;
     display: block;
     background-color: var(--darker-beige);
+    font-family: RobotoMono;
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
-sl{
+u{
     background-color: var(--darker-beige);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+a{
+    color: var(--link-blue);
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+kbd{
+    background-color: black;
     padding: 2px 4px;
     border-radius: 4px;
 }
