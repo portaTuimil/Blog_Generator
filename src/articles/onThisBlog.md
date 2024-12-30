@@ -11,7 +11,7 @@ In both repos:        index.html          /src (with assets, JS and CSS
 <iframe id='iframe' src='https://portatuimil.github.io/Technical_Blog/' frameborder='0' height='200px' scrolling="no"></iframe>
   <script>window.addEventListener('load', ()=>{
     let iframe = document.getElementById('iframe');
-    iframe.contentWindow.scrollTo(0, iframe.contentWindow.document.getElementsByClassName('onThisBlog')[0].offsetTop);
+    iframe.contentWindow.scrollTo(0, 200);
     alert(iframe.contentWindow.document.getElementsByClassName('onThisBlog')[0].offsetTop)
     })</script>
 <p>If you looked to your search bar, you would see something like <u>https://portatuimil.github.io/Blog_Generator/?t=onThisBlog</u>. If you look carefully, you can see that it points towards the second GitHub repo <u>https://portatuimil.github.io/Blog_Generator/</u>, and then it passes a parameter <u>?t=onThisBlog</u>.  As I have stated previously, my blog works by inyecting an article in a <u>html fil</u>. What this parameter does is to specify which article is the one require. This parameter is passe to a function called <a href='https://github.com/portaTuimil/Blog_Generator/blob/master/src/index.js#:~:text=URLSearchParams(url)'>URLSearchParams()</a> which is called over <u>window.location.search</u>.</p>
