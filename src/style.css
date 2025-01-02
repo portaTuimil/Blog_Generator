@@ -127,7 +127,7 @@ body{
 
 @media (max-width: 950px) {
     :root {
-    --standard-margin: 2%;
+    --standard-margin: 4%;
     }
 }
 code {
@@ -150,6 +150,7 @@ code{
     background-color: var(--darker-beige);
     font-family: RobotoMono;
     -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     overflow-x: scroll;
 }
 
