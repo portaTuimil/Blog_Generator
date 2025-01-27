@@ -12,10 +12,12 @@
     font-family: RobotoMono;
     src: url(../assets/fonts/RobotoMono-VariableFont_wght.ttf);
 }
+
 :root{
     --light-grey: #1e1e1e;
     --dark-grey: #121212;
     --link-blue:#6f87bf;
+    --dark-blue: #0b131e;
     --light-beige: #deddd0;
     --dark-beige: #818181;
     --darker-beige: #282725;
