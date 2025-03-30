@@ -1,18 +1,22 @@
 {
     "articles": [{
-        "On this blog and it's structure:": [
+        "onThisBlog": [
             {
+            "título": "Sobre cómo este blog funciona y su estructura",
+            "title": "On this blog and it's structure:",
+            "descripción": "Mi blog es un sitio web stático alojado en Github pages. Este opera inyectando el texto correspondiente a cada uno de los artículos en una platilla de HTML. En esta entrada hablo acerca de cómo hacer esto sin contar con un backend al uso y como reutilizar mi código en otros proyectos.",
             "description": "My blog is a frontend static site hosted in GitHub pages. It operates by inyecting data stored in JSON and markdown files into a html template. In this blog post I talk about how it works and how you can use my code to create your own blog.",
-            "spanish": null,
-            "english": "https://portatuimil.github.io/Blog_Generator/?t=onThisBlog",
-            "id": "onThisBlog"
+            "spanish": "https://portatuimil.github.io/Blog_Generator/?t=onThisBlogES",
+            "english": "https://portatuimil.github.io/Blog_Generator/?t=onThisBlogEN"
         }],
-        "On what I did to my old computer:": [
+        "onWhatIDidToMyOldComputer": [
             {
+            "título": null,
+            "title": "On what I did to my old computer:",
+            "descripción": null,
             "description": "Recently I tuned up an old computer. I installed linux on it and I explored different ways to control it remotely. In this post I talk about this process and how you cant do it too.",
             "spanish": null,
-            "english": "https://portatuimil.github.io/Blog_Generator/?t=onWhatIDidToMyOldComputer",
-            "id": "onWhatIDidToMyOldComputer"
+            "english": "https://portatuimil.github.io/Blog_Generator/?t=onWhatIDidToMyOldComputerEN"
         }]
     }]
 }
