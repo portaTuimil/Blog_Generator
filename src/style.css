@@ -140,6 +140,24 @@ code {
     display: none;  /* Safari and Chrome */
 }
 
+.languageToogler{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--light-beige) solid 2px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.languageToogler a{
+    color: var(--light-beige);
+    text-decoration: none;
+}
+
+.languageToogler svg{
+    vertical-align: bottom;
+}
+
 
 /* ---------- Styles ---------- */
 
