@@ -7,7 +7,10 @@
             "descriptionES": "Mi blog es un sitio web stático alojado en Github pages. Este opera inyectando el texto correspondiente a cada uno de los artículos en una platilla de HTML. En esta entrada hablo acerca de cómo hacer esto sin contar con un backend al uso y como reutilizar mi código en otros proyectos.",
             "descriptionEN": "My blog is a frontend static site hosted in GitHub pages. It operates by inyecting data stored in JSON and markdown files into a html template. In this blog post I talk about how it works and how you can use my code to create your own blog.",
             "linkES": "https://portatuimil.github.io/Blog_Generator/?t=onThisBlogES",
-            "linkEN": "https://portatuimil.github.io/Blog_Generator/?t=onThisBlogEN"
+            "linkEN": "https://portatuimil.github.io/Blog_Generator/?t=onThisBlogEN",
+            "displayES": 0,
+            "displayEN": 0,
+            "libraries": []
         }],
         "onWhatIDidToMyOldComputer": [
             {
@@ -16,7 +19,10 @@
             "descriptionES": null,
             "descriptionEN": "Recently I tuned up an old computer. I installed linux on it and I explored different ways to control it remotely. In this post I talk about this process and how you cant do it too.",
             "linkES": null,
-            "linkEN": "https://portatuimil.github.io/Blog_Generator/?t=onWhatIDidToMyOldComputerEN"
+            "linkEN": "https://portatuimil.github.io/Blog_Generator/?t=onWhatIDidToMyOldComputerEN",
+            "displayES": 0,
+            "displayEN": 0,
+            "libraries": []
         }]
     }]
 }

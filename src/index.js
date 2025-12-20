@@ -32,6 +32,31 @@ async function retrieveArticle(title) {
             header.insertBefore(lToogler, document.querySelector(".date"))
         }   
     } 
+    
+    let libraries = json.articles[0][titleID][0]["libraries"];
+    if(typeof libraries !== 'undefined' && libraries.length > 0){
+        if (libraries.includes('MathJax')){
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                svg: {
+                    scale: 1.25
+                }
+            };
+
+            const script = document.createElement('script');
+            script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js";
+            script.async = true;
+
+            script.onload = () => {
+                MathJax.typesetPromise();
+            };
+
+            document.head.appendChild(script);
+        }
+    }
 
     const response = await fetch(`./src/articles/${title}.md`);
     const text = await response.text();
