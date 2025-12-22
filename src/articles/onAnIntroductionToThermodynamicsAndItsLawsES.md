@@ -1,5 +1,18 @@
 Sobre una introducción a la termodinámica y sus leyes:///A 22 de diciembre de 2025///
 
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] },
+  startup: {
+    pageReady: () => {
+      document.body.style.visibility = "visible"; // Show body after typeset
+      return MathJax.startup.defaultPageReady();
+    }
+  }
+};
+document.body.style.visibility = "hidden"; // Hide body initially
+</script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 
 <p>La termodinámica es la parte de la física dedicada al estudio, a nivel macroscópico, de los intercambios de energía entre los diversos sistemas y su entorno. Esta rama, fundamentada en el siglo XIX a raíz del desarrollo de las máquinas térmicas, busca describir los procesos que conllevan intercambios de energía, esto es, aquellos procesos que involucran calor o trabajo.</p>
