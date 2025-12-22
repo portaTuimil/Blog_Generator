@@ -28,9 +28,9 @@
             {
             "titleES": "Sobre una introducción a la termodinámica y sus leyes:",
             "titleEN": "On An Introduction To Thermodynamics And Its Laws",
-            "descriptionES": "https://portatuimil.github.io/Blog_Generator/?t=onAnIntroductionToThermodynamicsAndItsLawsES",
+            "descriptionES": "La termodinámica centra su campo de estudio alrededor de la descripción de los procesos que conllevan intercambios de energía. En este artículo se explicarán las leyes que la rigen y los procesos que involucra.",
             "descriptionEN": null,
-            "linkES": null,
+            "linkES": "https://portatuimil.github.io/Blog_Generator/?t=onAnIntroductionToThermodynamicsAndItsLawsES",
             "linkEN": null,
             "displayES": 1,
             "displayEN": 0,
