@@ -23,6 +23,18 @@
             "displayES": 0,
             "displayEN": 0,
             "libraries": []
+        }],
+        "onAnIntroductionToThermodynamicsAndItsLaws":[
+            {
+            "titleES": "Sobre una introducción a la termodinámica y sus leyes:",
+            "titleEN": "On An Introduction To Thermodynamics And Its Laws",
+            "descriptionES": "https://portatuimil.github.io/Blog_Generator/?t=onAnIntroductionToThermodynamicsAndItsLawsES",
+            "descriptionEN": null,
+            "linkES": null,
+            "linkEN": null,
+            "displayES": 1,
+            "displayEN": 0,
+            "libraries": ["MathJax"]
         }]
     }]
 }
