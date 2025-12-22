@@ -47,14 +47,13 @@ async function retrieveArticle(title) {
 
             const script = document.createElement('script');
             script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js";
-            script.async = true;
+            script.async = false;
 
             script.onload = () => {
                 MathJax.typesetPromise();
             };
 
             document.head.appendChild(script);
-            window.location.reload();
         }
     }
 
@@ -67,3 +66,4 @@ async function retrieveArticle(title) {
 }
 
 retrieveArticle(urlParams.get("t"));
+
