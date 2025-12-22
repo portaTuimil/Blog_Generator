@@ -32,30 +32,12 @@ async function retrieveArticle(title) {
         }   
     } 
     
-    let libraries = json.articles[0][titleID][0]["libraries"];
+    /*let libraries = json.articles[0][titleID][0]["libraries"];
     if(typeof libraries !== 'undefined' && libraries.length > 0){
         if (libraries.includes('MathJax')){
-            window.MathJax = {
-                tex: {
-                    inlineMath: [['$', '$'], ['\\(', '\\)']],
-                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
-                },
-                svg: {
-                    scale: 1.25
-                }
-            };
-
-            const script = document.createElement('script');
-            script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js";
-            script.async = false;
-
-            script.onload = () => {
-                MathJax.typesetPromise();
-            };
-
-            document.head.appendChild(script);
+            renderMathJax();
         }
-    }
+    }*/
 
     const response = await fetch(`./src/articles/${title}.md`);
     const text = await response.text();
@@ -66,4 +48,12 @@ async function retrieveArticle(title) {
 }
 
 retrieveArticle(urlParams.get("t"));
-
+window.MathJax = {
+    tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+        scale: 1.25
+    }
+};
