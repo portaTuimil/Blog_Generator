@@ -6,72 +6,74 @@ Sobre una introducción a la termodinámica y sus leyes:///A 22 de diciembre de 
 <p>Para comenzar a comprender esta materia es necesario conocer una serie de conceptos que serán útiles más adelante. </p>
 <h3>Conceptos básicos:</h3>
 <p>Gran parte del estudio de la termodinámica involucra el estudio de gases y líquidos. Los gases como el oxígeno o el nitrógeno, así como los gases nobles, tienen comportamientos aproximables mediante la ecuación de los gases ideales :</p>
-$$pV = mR_{s}T; \quad R\left[ \frac{m^3*Pa}{kg*K} \right];\quad R_{s}=\frac{8,314}{M_{molar}};$$
+<div class="flex-wrapper"><p>$$pV = mR_{s}T;$$ </p><p>$$ R\left[ \frac{m^3*Pa}{kg*K} \right];$$</p><p>$$R_{s}=\frac{8,314}{M_{molar}};$$</p></div>
 <small><b>Ecuación 1.</b> Ecuación de los gases ideales (nótese que en termodinámica se acostumbra usar masa en vez de moles, por lo que la constante de los gases ideales se divide entre la masa del gas).</small>
 <p>Esta ecuación asume que los átomos del gas no tienen volumen y que no existen fuerzas intermoleculares entre ellos. Estas suposiciones hacen que para algunas sustancias la ecuación carezca de validez o solo se corresponda con la realidad a temperaturas altas y presiones bajas. Para muchas de estas sustancias, como por ejemplo para el agua (que es una sustancia pura, a saber, que su composición química no varía con la temperatura), existen tablas donde partiendo de datos conocidos se pueden sacar otros que han sido hallados experimentalmente.</p>
-<table>
-    <caption><b>Tabla 1.</b>Tabla de Saturación del Agua.</caption>
-    <thead>
-        <tr>
-            <th>Temperatura (°C)</th>
-            <th>Presión de saturación (kPa)</th>
-            <th>Volumen específico líquido (m³/kg)</th>
-            <th>Volumen específico vapor (m³/kg)</th>
-            <th>Entalpía líquido (kJ/kg)</th>
-            <th>Entalpía vapor (kJ/kg)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>0</td>
-            <td>0.611</td>
-            <td>0.001000</td>
-            <td>206.0</td>
-            <td>0.0</td>
-            <td>2501.0</td>
-        </tr>
-        <tr>
-            <td>20</td>
-            <td>2.339</td>
-            <td>0.001001</td>
-            <td>12.06</td>
-            <td>84.0</td>
-            <td>2524.0</td>
-        </tr>
-        <tr>
-            <td>50</td>
-            <td>12.35</td>
-            <td>0.001012</td>
-            <td>12.67</td>
-            <td>209.0</td>
-            <td>2575.0</td>
-        </tr>
-        <tr>
-            <td>100</td>
-            <td>101.3</td>
-            <td>0.001043</td>
-            <td>1.672</td>
-            <td>419.0</td>
-            <td>2676.0</td>
-        </tr>
-        <tr>
-            <td>120</td>
-            <td>198.5</td>
-            <td>0.001060</td>
-            <td>0.890</td>
-            <td>504.0</td>
-            <td>2738.0</td>
-        </tr>
-        <tr>
-            <td>150</td>
-            <td>476.2</td>
-            <td>0.001090</td>
-            <td>0.392</td>
-            <td>632.0</td>
-            <td>2833.0</td>
-        </tr>
-    </tbody>
-</table>
+<div class="table-wrapper">
+    <table>
+        <caption><b>Tabla 1.</b>Tabla de Saturación del Agua.</caption>
+        <thead>
+            <tr>
+                <th>Temperatura (°C)</th>
+                <th>Presión de saturación (kPa)</th>
+                <th>Volumen específico líquido (m³/kg)</th>
+                <th>Volumen específico vapor (m³/kg)</th>
+                <th>Entalpía líquido (kJ/kg)</th>
+                <th>Entalpía vapor (kJ/kg)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>0.611</td>
+                <td>0.001000</td>
+                <td>206.0</td>
+                <td>0.0</td>
+                <td>2501.0</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>2.339</td>
+                <td>0.001001</td>
+                <td>12.06</td>
+                <td>84.0</td>
+                <td>2524.0</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>12.35</td>
+                <td>0.001012</td>
+                <td>12.67</td>
+                <td>209.0</td>
+                <td>2575.0</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>101.3</td>
+                <td>0.001043</td>
+                <td>1.672</td>
+                <td>419.0</td>
+                <td>2676.0</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>198.5</td>
+                <td>0.001060</td>
+                <td>0.890</td>
+                <td>504.0</td>
+                <td>2738.0</td>
+            </tr>
+            <tr>
+                <td>150</td>
+                <td>476.2</td>
+                <td>0.001090</td>
+                <td>0.392</td>
+                <td>632.0</td>
+                <td>2833.0</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <small>Nótese que al hablar de sustancia puras se habla de líquidos subenfriados para referirse a líquidos y vapor sobrecalentado para referirse a su estado gaseoso por debajo del punto crítico. Esta tabla es válida en el cambio de fase (bajo la campana de saturación) por lo que conociendo un único valor de su estado se pueden conocer todos los demás como se discutirá más adelante (el estado de una mezcla bifásica queda definido por una única magnitud).</small>
 <p>En termodinámica se distinguen dos tipos de unidades, las extensivas y las intensivas. Las magnitudes extensivas son aquellas de que dependen del tamaño o la cantidad de materia que hay en el sistema y son tales como la masa, el volumen, la energía interna o la entalpía (entre otras). Las intensivas, por otra parte, no dependen de nada de eso y son algunas como la presión, la temperatura o la densidad. Para convertir magnitudes extensivas en intensivas, y de esta manera poder trabajar de una manera escalable y más general, se las divide por la masa, convirtiéndose así en unidades "específicas". Mediante este procedimiento se llega a magnitudes como el volumen específico (el inverso de la densidad) o la energía interna específica (entre otros), que pueden ser halladas para casos particulares en las tablas anteriormente mencionadas.</p>
 
@@ -89,30 +91,33 @@ $$pV = mR_{s}T; \quad R\left[ \frac{m^3*Pa}{kg*K} \right];\quad R_{s}=\frac{8,31
 $$\Delta U = Q-W$$
 <small><b>Ecuación 2.</b> Ecuación de la primera ley de la termodinámica.</small>
 <p>Es decir, la variación de energía interna ($U$) de un sistema (la variación de lo que podríamos considerar su energía potencial microscópica), es la energía transmitida en forma de intercambio de calor menos la trasmitida en forma de trabajo. Para entender esta ley tal como está formulada en este caso es imprescindible comprender el criterio de signos que se ha tomado. Con fines mnemotécnicos se podría decir que en termodinámica se toma un enfoque utilitario del convenio, como una máquina térmica busca convertir calor en trabajo, entonces se toma con signo positivo recibir calor y producir trabajo (nótese que aunque el signo sea positivo al producir trabajo, el sistema estaría perdiendo energía, de ahí el signo negativo en la ecuación de arriba).</p>
-<table>
-    <caption><b>Tabla 2.</b> Sobre el convenio de signos en termodinámica.</caption>
-    <thead>
-        <tr>
-            <th>Positivo (cuando el sistema se comporta como máquina térmica)</th>
-            <th>Negativo (cuando el sistema se comporta como máquina frigorífica)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Recibir calor &lt;-- </td>
-            <td>Producir calor --&gt; </td>
-        </tr>
-        <tr>
-            <td>Producir trabajo --&gt; </td>
-            <td>Recibir trabajo &lt;-- </td>
-        </tr>
-    </tbody>
-</table>
+
+<div class="table-wrapper">
+    <table>
+        <caption><b>Tabla 2.</b> Sobre el convenio de signos en termodinámica.</caption>
+        <thead>
+            <tr>
+                <th>Positivo (cuando el sistema se comporta como máquina térmica)</th>
+                <th>Negativo (cuando el sistema se comporta como máquina frigorífica)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Recibir calor &lt;-- </td>
+                <td>Producir calor --&gt; </td>
+            </tr>
+            <tr>
+                <td>Producir trabajo --&gt; </td>
+                <td>Recibir trabajo &lt;-- </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <p>La energía interna es una de las magnitudes más útiles a la hora de resolver problemas relacionados con sistemas cerrados. Desde lo que podríamos considerar el punto de vista de la mecánica estadística, la energía interna se podría describir como la suma de energía cinética de las partículas y  la energía almacenada en sus enlaces y fuerzas intermoleculares. En termodinámica, tratando al sistema como un conjunto, es simplemente una magnitud tabulada que en un estado particular, cierta presión y temperatura, es siempre igual. </p>
 
 <p>Las magnitudes como la energía interna, todas aquellas que no dependen más que del estado en que se encuentra el gas, se conocen como funciones de estado. Estas pueden depender de uno o varios factores pero, dados estos factores estarán siempre definidas en el mismo valor. Las funciones que no son funciones de estado se conocen a veces como "funciones de camino" y son algunas como el calor o el trabajo, que dependen de la trayectoria del sistema. La energía interna se define así:</p>
-$$dU = C_{V}(T)*dT; \text{ Asumiendo calores específicos constantes => } \Delta U=C_{V}*(T_{2}-T_{1})$$
+<div class="flex-wrapper"><p>$$dU = C_{V}(T)*dT;$$</p> <p>$$ \text{ Asumiendo calores específicos constantes => }$$</p> <p>$$ \Delta U=C_{V}*(T_{2}-T_{1})$$</p></div>
 <small><b>Ecuación 3.</b> Ecuación que describe la energía interna. Nótese que el calor a volumen constante depende de la temperatura por lo que el segundo resultado solo es verdadero aproximándolo a valor constante (que es se suele emplear al trabajar con gases ideales).</small>
 
 <p>Como se puede observar, en consecuencia, para los gases ideales la energía interna es una función de estado que depende solo de la temperatura. Para el resto de gases la energía interna se pude encontrar en las tablas por lo que conociendo, en general, otras dos propiedades del gas, esta se puede deducir. </p>
@@ -130,7 +135,7 @@ $$\Delta S = \frac{\partial Q}{T}$$
 <p>De esta manera, la segunda ley de la termodinámica puede interpretarse como una ley de carácter probabilístico: los sistemas tienden espontáneamente a evolucionar hacia los estados de mayor entropía, ya que estos corresponden a los estados más probables desde el punto de vista microscópico. Aunque, en principio, pueden existir fluctuaciones que contradigan esta tendencia, en sistemas macroscópicos dichas fluctuaciones son extremadamente improbables y no se observan en la práctica.</p>
 
 <p>Carnot demostró, mediante el teorema que lleva su nombre, que la eficiencia de una máquina térmica está directamente relacionada con la entropía que se genera durante su funcionamiento. En particular, una máquina térmica alcanza su máxima eficiencia únicamente cuando opera de manera reversible, es decir, cuando no genera entropía; cualquier generación de entropía implica una disminución inevitable del rendimiento. La máquina reversible que opera entre dos focos térmicos se conoce como la máquina de Carnot y tiene la siguiente eficiencia:</p>
-$$\eta_{Carnot} = 1-\frac{T_{L}}{T_{H}}; \quad \text{Que por ser reversible es igual equivale a decir}\quad \eta_{Carnot}=1-\frac{Q_{L}}{Q_{H}};$$
+<div class="flex-wrapper"><p>$$\eta_{Carnot} = 1-\frac{T_{L}}{T_{H}};$$ </p><p>$$\text{Que por ser reversible es igual equivale a decir} =>$$</p><p>$$ \eta_{Carnot}=1-\frac{Q_{L}}{Q_{H}};$$</p></div>
 <small><b>Ecuación 4.</b> Eficiencia de la máquina de Carnot. En el corolario del teorema de Carnot se demuestra que todas las máquinas térmicas reversibles y que operen entre dos focos tienen esta eficiencia.</small>
 <h3>Sobre la tercera ley de la termodinámica:</h3>
 <p>La tercera ley también cuenta con múltiples formulaciones, en general se dirá algo como lo siguiente:</p>
