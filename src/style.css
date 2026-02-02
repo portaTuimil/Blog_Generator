@@ -14,11 +14,16 @@
 }
 
 :root{
+    --ghost-white: #F2F2F2;
+    --subtle-grey: #E0E0E0;
     --light-grey: #1e1e1e;
     --dark-grey: #171717;
     --darker-grey: #121212;
+
+    --white-blue: #afc3c0;
     --link-blue:#6f87bf;
     --dark-blue: #0b131e;
+
     --light-beige: #deddd0;
     --dark-beige: #818181;
     --darker-beige: #282725;
@@ -30,8 +35,8 @@
     --standard-indentation: 20px;
 
     --background-color: var(--darker-grey);
-    --text-color: var(--light-beige);
-    --title-color: var(--dark-beige);
+    --text-color: var(--subtle-grey);
+    --title-color: var(--ghost-white);
     --header-color: var(--dark-beige);
     --secondary-color: var(--dark-beige);
     --primary-blue: var(--link-blue);
@@ -67,8 +72,6 @@
     background-color: var(--secondary-color);
     border: 0px none var(--background-color);
 }
-
-
 
 /* ---------- Main Page ---------- */
 body{
@@ -122,6 +125,10 @@ body{
     font-family: Roboto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+}
+
 .content{
     display: flex;
     flex-direction: column;
@@ -129,7 +136,7 @@ body{
     width: 100%;
     padding: 30px var(--standard-margin);
     line-height: 1.6;
-    color: white;
+    color: var(--text-color);
     margin-bottom: 30px;
 }
 
