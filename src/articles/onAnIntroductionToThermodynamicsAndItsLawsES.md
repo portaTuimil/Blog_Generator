@@ -73,8 +73,9 @@ Sobre una introducción a la termodinámica y sus leyes:///A 22 de diciembre de 
             </tr>
         </tbody>
     </table>
-</div>
 <small>Nótese que al hablar de sustancia puras se habla de líquidos subenfriados para referirse a líquidos y vapor sobrecalentado para referirse a su estado gaseoso por debajo del punto crítico. Esta tabla es válida en el cambio de fase (bajo la campana de saturación) por lo que conociendo un único valor de su estado se pueden conocer todos los demás como se discutirá más adelante (el estado de una mezcla bifásica queda definido por una única magnitud).</small>
+</div>
+
 <p>En termodinámica se distinguen dos tipos de unidades, las extensivas y las intensivas. Las magnitudes extensivas son aquellas de que dependen del tamaño o la cantidad de materia que hay en el sistema y son tales como la masa, el volumen, la energía interna o la entalpía (entre otras). Las intensivas, por otra parte, no dependen de nada de eso y son algunas como la presión, la temperatura o la densidad. Para convertir magnitudes extensivas en intensivas, y de esta manera poder trabajar de una manera escalable y más general, se las divide por la masa, convirtiéndose así en unidades "específicas". Mediante este procedimiento se llega a magnitudes como el volumen específico (el inverso de la densidad) o la energía interna específica (entre otros), que pueden ser halladas para casos particulares en las tablas anteriormente mencionadas.</p>
 
 <p>Una magnitud intensiva muy interesante a nivel termodinámico es el calor específico, que se define como la cantidad de energía que hay que añadir a cierta cantidad de una sustancia para incrementar su temperatura en un grado centígrado. En el caso de líquidos y sólidos (al ser sustancias con un comportamiento próximo al incompresible) este valor tiende a converger a un valor concreto (por ejemplo 1 caloría en el caso del agua, que equivale a 4,18J), pero en gases este valor depende de si se realiza este incremento de temperatura a volumen constante o a presión constante, definiéndose así $C_{p}$ y $C_{V}$.</p>

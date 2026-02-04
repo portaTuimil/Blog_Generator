@@ -224,7 +224,10 @@ table{
 
 .table-wrapper {
     overflow-x: auto;
-    margin: 1.5rem 0;
+    margin: 1.2rem 0 0.75rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 th, td {
