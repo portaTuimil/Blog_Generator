@@ -73,8 +73,10 @@ Sobre una introducción a la termodinámica y sus leyes:///A 22 de diciembre de 
             </tr>
         </tbody>
     </table>
-<small>Nótese que al hablar de sustancia puras se habla de líquidos subenfriados para referirse a líquidos y vapor sobrecalentado para referirse a su estado gaseoso por debajo del punto crítico. Esta tabla es válida en el cambio de fase (bajo la campana de saturación) por lo que conociendo un único valor de su estado se pueden conocer todos los demás como se discutirá más adelante (el estado de una mezcla bifásica queda definido por una única magnitud).</small>
+
 </div>
+
+<small>Nótese que al hablar de sustancia puras se habla de líquidos subenfriados para referirse a líquidos y vapor sobrecalentado para referirse a su estado gaseoso por debajo del punto crítico. Esta tabla es válida en el cambio de fase (bajo la campana de saturación) por lo que conociendo un único valor de su estado se pueden conocer todos los demás como se discutirá más adelante (el estado de una mezcla bifásica queda definido por una única magnitud).</small>
 
 <p>En termodinámica se distinguen dos tipos de unidades, las extensivas y las intensivas. Las magnitudes extensivas son aquellas de que dependen del tamaño o la cantidad de materia que hay en el sistema y son tales como la masa, el volumen, la energía interna o la entalpía (entre otras). Las intensivas, por otra parte, no dependen de nada de eso y son algunas como la presión, la temperatura o la densidad. Para convertir magnitudes extensivas en intensivas, y de esta manera poder trabajar de una manera escalable y más general, se las divide por la masa, convirtiéndose así en unidades "específicas". Mediante este procedimiento se llega a magnitudes como el volumen específico (el inverso de la densidad) o la energía interna específica (entre otros), que pueden ser halladas para casos particulares en las tablas anteriormente mencionadas.</p>
 
@@ -118,7 +120,9 @@ $$\Delta U = Q-W$$
 <p>La energía interna es una de las magnitudes más útiles a la hora de resolver problemas relacionados con sistemas cerrados. Desde lo que podríamos considerar el punto de vista de la mecánica estadística, la energía interna se podría describir como la suma de energía cinética de las partículas y  la energía almacenada en sus enlaces y fuerzas intermoleculares. En termodinámica, tratando al sistema como un conjunto, es simplemente una magnitud tabulada que en un estado particular, cierta presión y temperatura, es siempre igual. </p>
 
 <p>Las magnitudes como la energía interna, todas aquellas que no dependen más que del estado en que se encuentra el gas, se conocen como funciones de estado. Estas pueden depender de uno o varios factores pero, dados estos factores estarán siempre definidas en el mismo valor. Las funciones que no son funciones de estado se conocen a veces como "funciones de camino" y son algunas como el calor o el trabajo, que dependen de la trayectoria del sistema. La energía interna se define así:</p>
-<div class="flex-wrapper"><p>$$dU = C_{V}(T)*dT;$$</p> <p>$$ \text{ Asumiendo calores específicos constantes => }$$</p> <p>$$ \Delta U=C_{V}*(T_{2}-T_{1})$$</p></div>
+<p>$$dU = C_{V}(T)*dT;$$</p> 
+<p>Que, al asumir calores específicos constantes, se puede expresar como:</p> 
+<p>$$ \Delta U=C_{V}*(T_{2}-T_{1})$$</p></div>
 <small><b>Ecuación 3.</b> Ecuación que describe la energía interna. Nótese que el calor a volumen constante depende de la temperatura por lo que el segundo resultado solo es verdadero aproximándolo a valor constante (que es se suele emplear al trabajar con gases ideales).</small>
 
 <p>Como se puede observar, en consecuencia, para los gases ideales la energía interna es una función de estado que depende solo de la temperatura. Para el resto de gases la energía interna se pude encontrar en las tablas por lo que conociendo, en general, otras dos propiedades del gas, esta se puede deducir. </p>
@@ -136,7 +140,9 @@ $$\Delta S = \frac{\partial Q}{T}$$
 <p>De esta manera, la segunda ley de la termodinámica puede interpretarse como una ley de carácter probabilístico: los sistemas tienden espontáneamente a evolucionar hacia los estados de mayor entropía, ya que estos corresponden a los estados más probables desde el punto de vista microscópico. Aunque, en principio, pueden existir fluctuaciones que contradigan esta tendencia, en sistemas macroscópicos dichas fluctuaciones son extremadamente improbables y no se observan en la práctica.</p>
 
 <p>Carnot demostró, mediante el teorema que lleva su nombre, que la eficiencia de una máquina térmica está directamente relacionada con la entropía que se genera durante su funcionamiento. En particular, una máquina térmica alcanza su máxima eficiencia únicamente cuando opera de manera reversible, es decir, cuando no genera entropía; cualquier generación de entropía implica una disminución inevitable del rendimiento. La máquina reversible que opera entre dos focos térmicos se conoce como la máquina de Carnot y tiene la siguiente eficiencia:</p>
-<div class="flex-wrapper"><p>$$\eta_{Carnot} = 1-\frac{T_{L}}{T_{H}};$$ </p><p>$$\text{Que por ser reversible es igual equivale a decir} =>$$</p><p>$$ \eta_{Carnot}=1-\frac{Q_{L}}{Q_{H}};$$</p></div>
+<p>$$\eta_{Carnot} = 1-\frac{T_{L}}{T_{H}};$$ </p>
+<p>Por tratarse de un proceso reversible, se cumple:</p>
+<div class="flex-wrapper"><p> $$\frac{Q_L}{Q_H}=\frac{T_L}{T_H} \therefore$$ </p><p>$$\eta_{Carnot}=1-\frac{Q_{L}}{Q_{H}};$$</p></div>
 <small><b>Ecuación 4.</b> Eficiencia de la máquina de Carnot. En el corolario del teorema de Carnot se demuestra que todas las máquinas térmicas reversibles y que operen entre dos focos tienen esta eficiencia.</small>
 <h3>Sobre la tercera ley de la termodinámica:</h3>
 <p>La tercera ley también cuenta con múltiples formulaciones, en general se dirá algo como lo siguiente:</p>
