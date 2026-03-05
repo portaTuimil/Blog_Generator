@@ -118,9 +118,7 @@ body{
     border-radius: 5px;
     padding: 0 10px;
     margin-left: auto;
-}
-.languageToogler a{
-    color: var(--header-color); 
+    color: var(--header-color);
 }
 
 .languageToogler svg{
@@ -178,10 +176,11 @@ u{
 a{
     color: var(--link-blue);
     cursor: pointer;
+    transition: opacity 0.3s;
 }
 
 a:hover{
-    opacity:80%;
+    opacity:70%;
 }
 
 kbd{
