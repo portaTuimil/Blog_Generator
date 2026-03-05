@@ -177,6 +177,7 @@ a{
     color: var(--link-blue);
     cursor: pointer;
     transition: opacity 0.3s;
+    font-weight: bold;
 }
 
 a:hover{
