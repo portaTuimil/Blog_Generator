@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./src/style.css">
     <script type="module" src="./src/index.js" defer></script>
 </head>
-<body>
+<body class="">
 
 <header class="header">
     <div class="wrapper">
@@ -19,11 +19,14 @@
         </a>
     </div>
 
-    <a class="languageToogler" href="#"></a>
-
+    <div class="tooglerWrapper">
+        <button class="themeSwitch" aria-label="Theme Toogler"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-80q-26 0-47-12.5T400-126q-33 0-56.5-23.5T320-206v-142q-59-39-94.5-103T190-590q0-121 84.5-205.5T480-880q121 0 205.5 84.5T770-590q0 77-35.5 140T640-348v142q0 33-23.5 56.5T560-126q-12 21-33 33.5T480-80Zm-80-126h160v-36H400v36Zm0-76h160v-38H400v38Zm-8-118h58v-108l-88-88 42-42 76 76 76-76 42 42-88 88v108h58q54-26 88-76.5T690-590q0-88-61-149t-149-61q-88 0-149 61t-61 149q0 63 34 113.5t88 76.5Zm88-162Zm0-38Z"/></svg></svg></button>
+        <a class="languageToogler" href="#"></a>
+    </div>
+    
     <div class="date" style="grid-column: 4;">
         <svg width='1.1rem' height='1.1rem' viewBox='0 0 24 24' fill='none'><path d='M3 10H21M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z' stroke='#818181' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>
-        <div class="dateData"></div>
+    <div class="dateData"></div>
     </div>
 </header>
 

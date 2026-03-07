@@ -82,3 +82,32 @@ function loadMathJax() {
 
 //entry point
 retrieveArticle(urlParams.get("t"));
+
+//themes
+let theme = localStorage.getItem("blogTheme");
+const themeSwitch = document.querySelector(".themeSwitch");
+const body = document.querySelector("body");
+if(theme){
+    body.classList.add(theme);
+} else{
+    body.classList.add("darkmode");
+}
+
+themeSwitch.addEventListener("click", ()=>{
+    body.style.transition = "background-color 500ms";
+    let currentTheme = body.classList[0];
+    switch (currentTheme){
+        case "lightmode":
+            theme = "darkmode";
+            break;
+        case "darkmode":
+            theme = "lightmode";
+            break;
+        default:
+            theme = "darkmode"
+            break;
+    }
+    body.classList.remove(currentTheme)
+    body.classList.add(theme);
+    localStorage.setItem("blogTheme", theme);
+});
