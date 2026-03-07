@@ -36,20 +36,21 @@
     
     font-family: RobotoRegular;
     scrollbar-width: auto;
+    scrollbar-color: var(--secondary-color) transparent;
 }
 
 .lightmode{
-    --background-color:#ffffff;
+    --background-color: var(--subtle-grey);
     --text-color: #373830;
     --title-color: #373830;
-    --header-color: var(--dark-beige);
+    --header-color: #464646;
     --secondary-color: var(--dark-beige);
-    --primary-blue: var(--link-blue);
+    --primary-blue: #384d7d;
     --contrast-dark : var(--dark-grey);
 }
 
 .darkmode{
-    --background-color: var(--darker-grey);
+    --background-color: #1A1818;
     --text-color: var(--subtle-grey);
     --title-color: var(--ghost-white);
     --header-color: var(--dark-beige);
@@ -64,12 +65,10 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
-    scrollbar-color: var(--secondary-color) var(--background-color);
-    color: var(--text-color);
 }
 
 a, button{
-    transition: transform 0.1s ease, background-color 0.15s ease;
+    transition: transform 0.1s ease, background-color 0.15s ease, opacity 0.3s;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -85,12 +84,13 @@ a:active, button:active {
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--background-color);
+    background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
     background-color: var(--secondary-color);
     border: 0px none var(--background-color);
+    border-radius: 2px;
 }
 
 
@@ -119,6 +119,10 @@ body{
     flex-wrap: nowrap;
     gap: 5px;
     align-items: center;
+}
+
+.blogLink{
+    fill: var(--header-color);
 }
 
 .tooglerWrapper{
@@ -158,6 +162,10 @@ body{
     color: var(--header-color);
 }
 
+.date > svg{
+    stroke: var(--header-color);
+}
+
 .title{
     margin: 0 var(--standard-margin);
     font-family: Roboto;
@@ -178,7 +186,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
 }
 
-
+button:hover{
+    opacity: 70%;
+}
 
 /* ---------- Styles ---------- */
 code{
@@ -203,7 +213,7 @@ u{
 }
 
 a{
-    color: var(--link-blue);
+    color: var(--primary-blue);
     cursor: pointer;
     transition: opacity 0.3s;
     font-weight: bold;
