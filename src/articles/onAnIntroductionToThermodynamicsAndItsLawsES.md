@@ -2,7 +2,16 @@ Sobre una introducción a la termodinámica y sus leyes:///A 22 de diciembre de 
 
 <p>La termodinámica es la parte de la física dedicada al estudio, a nivel macroscópico, de los intercambios de energía entre los diversos sistemas y su entorno. Esta rama, fundamentada en el siglo XIX a raíz del desarrollo de las máquinas térmicas, busca describir los procesos que conllevan intercambios de energía, esto es, aquellos procesos que involucran calor o trabajo.</p>
 <p>A la hora de afrontar el estudio de esta materia es importante separarla y distinguirla de la mecánica estadística. Mientras que esta última nace a finales de siglo de la mano de Boltzmann, Maxwell y Gibbs y se centra en el estudio del comportamiento de las partículas a nivel microscópico, la termodinámica se desarrolla unas décadas antes fundamentándose, en un inicio, sin necesidad de emplear explicaciones atómicas, es decir, tratando a los sistemas como un todo macroscópico y sin preocuparse por su constitución interna. De esta manera Carnot (1796-1832), uno de los padres de la termodinámica, publicó en 1824 su conocida obra <i>Réflexions sur la puissance motrice du feu et sur les machines propres à développer cette puissance</i> <i>(Reflexiones sobre la potencia motriz del fuego y sobre las máquinas propias para desarrollar esta potencia)</i> sin conocer la estructura microscópica de la materia como hoy la conocemos e, incluso, tratando al calor como un fluido.</p>
-
+<div class="iframe-container" style="width: 100%; max-width: 900px; margin: 0 auto; overflow: hidden;">
+  <iframe 
+    id="iframe-steam" 
+    src="https://portatuimil.github.io/Steam_Engine/" 
+    frameborder="0" 
+    scrolling="no" 
+    style="width: 100%; height: 350px; border: none; display: block;"    
+  ></iframe>
+</div>
+<small><b>Animation 1.</b> An animation of a steam engine I made with the JS canvas. Code <a href="https://github.com/portaTuimil/Steam_Engine">here</a>.</small>
 <p>Para comenzar a comprender esta materia es necesario conocer una serie de conceptos que serán útiles más adelante. </p>
 <h2>Conceptos básicos:</h2>
 <p>El estudio de la termodinámica parte de dos conceptos fundamentales, el calor ($Q$) y el trabajo ($W$). Estas dos magnitudes representan los dos tipos posibles de transferencia de energía, a saber, en forma de energía térmica y en forma de trabajo mecánico. Siendo que la energía siempre se conserva, la cantidad de trabajo o calor que un sistema dado reciba será su variación de energía interna, concepto que se discutirá más adelante.</p>

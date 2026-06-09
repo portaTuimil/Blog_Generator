@@ -252,6 +252,7 @@ small{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    scale: 1.10;
 }
 
 p{
