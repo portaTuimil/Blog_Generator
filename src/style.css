@@ -283,3 +283,12 @@ th, td {
     padding: 2px 2px 2px 12px;
     font-size: clamp(calc(var(--font-min) - 0.05rem), calc(var(--font-clamp) - 0.05rem), calc(var(--font-max)-0.05rem));
 }
+
+ul{
+    margin-top: 5px;
+    margin-left: calc(var(--standard-indentation)*2);
+}
+
+li{
+    margin-top: 20px;
+}

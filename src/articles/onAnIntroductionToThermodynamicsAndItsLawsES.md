@@ -5,6 +5,9 @@ Sobre una introducción a la termodinámica y sus leyes:///A 22 de diciembre de 
 
 <p>Para comenzar a comprender esta materia es necesario conocer una serie de conceptos que serán útiles más adelante. </p>
 <h2>Conceptos básicos:</h2>
+<p>El estudio de la termodinámica parte de dos conceptos fundamentales, el calor ($Q$) y el trabajo ($W$). Estas dos magnitudes representan los dos tipos posibles de transferencia de energía, a saber, en forma de energía térmica y en forma de trabajo mecánico. Siendo que la energía siempre se conserva, la cantidad de trabajo o calor que un sistema dado reciba será su variación de energía interna, concepto que se discutirá más adelante.</p>
+<div class="flex-wrapper"><p>$$W=\int_{}^{}p\cdot dV$$</p></div>
+<small><b>Ecuación 0.</b> Definición del trabajo. El desarrollo de esta ecuación para distintos casos se realizará más adelante.</small>
 <p>Gran parte del estudio de la termodinámica involucra el estudio de gases y líquidos. Los gases como el oxígeno o el nitrógeno, así como los gases nobles, tienen comportamientos aproximables mediante la ecuación de los gases ideales :</p>
 <div class="flex-wrapper"><p>$$pV = mR_{s}T;$$ </p><p>$$ R\left[ \frac{m^3*Pa}{kg*K} \right];$$</p><p>$$R_{s}=\frac{8,314}{M_{molar}};$$</p></div>
 <small><b>Ecuación 1.</b> Ecuación de los gases ideales (nótese que en termodinámica se acostumbra usar masa en vez de moles, por lo que la constante de los gases ideales se divide entre la masa del gas).</small>
@@ -86,7 +89,7 @@ Sobre una introducción a la termodinámica y sus leyes:///A 22 de diciembre de 
 
 <h3>Sobre la ley cero de la termodinámica:</h3>
 <p>La ley cero dice lo siguiente:</p>
-<blockquote>Si un cuerpo A está en equilibrio térmico con un cuerpo B, y el cuerpo B está a su vez en equilibrio con un cuerpo C, entonces A y C están en equilibrio.</blockquote>
+<blockquote>Si un cuerpo A está en equilibrio térmico con un cuerpo B, y el cuerpo B está a su vez en equilibrio con un cuerpo C, entonces A y C están en equilibrio térmico.</blockquote>
 <p>Esta afirmación, aunque pueda parecer obvia, al no ser deductible de ningún otro sitio debe ser postulada y es necesaria para poder constituir a esta rama de la física como un sistema cerrado en sí mismo.</p>
 <h3>Sobre la primera ley de la termodinámica:</h3>
 <p>A la primera ley se la conoce como la ley de la conservación de la energía y dice lo siguiente:</p><blockquote>En un proceso termodinámico que involucra un sistema cerrado, el incremento en la energía interna es igual a la diferencia entre el calor acumulado por el sistema y el trabajo realizado por él.</blockquote>
@@ -147,4 +150,60 @@ $$\Delta S = \frac{\partial Q}{T}$$
 <h3>Sobre la tercera ley de la termodinámica:</h3>
 <p>La tercera ley también cuenta con múltiples formulaciones, en general se dirá algo como lo siguiente:</p>
 <blockquote>Es imposible alcanzar el cero absoluto de temperatura mediante un número finito de procesos físicos.</blockquote>
-<p>Históricamente ha habido múltiples intentos de poner esta ley en función de la primera o la segunda, tratando de demostrar que son lógicamente equivalentes. Sin embargo, <a href='https://arxiv.org/html/2401.04069v2'>aunque se ha conseguido demostrar a partir de la segunda ley que al acercarse al cero absoluto las variaciones de entropía tienden a 0</a>, a día de hoy no es posible prescindir de este principio.</p>
+<p>Mientras que la segunda ley nos permite calcular los cambios de entropía ($\Delta S$), la importancia de este tercer principio radica en que establece un punto de referencia absoluto. Cuanto menor es la temperatura menores son los cambios de entropía (<a href='https://arxiv.org/html/2401.04069v2'>como demuestra el teorema de Nernst</a>). Físicamente, esto significa que para enfriar un cuerpo necesitamos alternar entre dos pasos: extraer calor a temperatura constante y luego aislar el sistema para que su temperatura baje. Sin embargo, el teorema de Nernst demuestra que al acercarnos al cero absoluto, las propiedades de los diferentes estados de la materia convergen y se vuelven idénticas. Al desaparecer la diferencia de entropía entre estados, el rendimiento de cada ciclo de refrigeración cae drásticamente hacia cero, haciendo que la bajada de temperatura en cada paso sea infinitesimal y exigiendo, por tanto, un número infinito de procesos para alcanzar los 0 grados Kelvin.</p>
+
+<h2>Los procesos termodinámicos en sistemas cerrados: </h2>
+<p>Los sistemas termodinámicos sufren modificaciones en su estado al ser modificadas sus variables de estado. Los procesos termodinámicos son, por otra parte, las trayectorias o caminos que sigue un sistema para pasar de un estado de equilibrio inicial a otro final. A la hora de estudiar estos sistemas es imprescindible conocer que magnitudes son las que se mantienen constantes y cuantos grados de libertad acotan a la cantidad posible de estados en los que el sistema puede permanecer. Analicemos siguiendo esta lógica los diferentes tipos de procesos:</p>
+<ul><li><p><b>-Isocóricos (a volumen constante):</b> el trabajo es la integral de la presión en un volumen dado. Si el volumen es constante, entonces es claro que la integral siempre será 0. Siendo esto siempre cierto, la energía interna variará exactamente en la misma cantidad que calor se añada. Conociendo este valor, mediante las tablas de las sustancias puras o mediante las suposiciones de los gases ideales, será fácil deducir temperatura y presión. </p>
+<div class="flex-wrapper"><p> $$W=\int_{}^{}p·dV=0 => \Delta U = Q$$</p></div>
+<small><b>Ecuación 5.</b> Razonamiento aplicable a sistemas isocóricos. Nótese que se podría aplicar, por ejemplo, la ecuación 3 para deducir temperatura la temperatura final pero empleando $C_v$, ya que lo que es constante es el volumen (todo esto asumiendo calores específicos constantes).</small></li>
+
+<li><p><b>-Isobáricos (a presión constante):</b> el trabajo es la integral de la presión en un volumen dado. Si el la presión es constante, entonces la integral será la presión por la diferencia de volumen.</p>
+<div class="flex-wrapper"><p>$$W = \int p \cdot dV = p \cdot (V_f - V_i) = p \cdot \Delta V$$</p></div>
+<small><b>Ecuación 6.</b> Resolución de la integral del trabajo para el caso isobárico.</small>
+<p>Si aplicamos la primera ley a este proceso, observamos que el calor intercambiado equivale a $\Delta U + p \cdot \Delta V$. Al agrupar estos términos, la termodinámica define una nueva función de estado llamada <b>entalpía ($H = U + p \cdot V$)</b>, la cual representa el calor total aportado en procesos a presión constante. Por lo tanto, para deducir las temperaturas o estados finales, podemos calcular este calor directamente empleando el calor específico a presión constante ($c_p$)</p>
+<div class="flex-wrapper"><p>$$Q = \Delta U + p \cdot \Delta V = \Delta H \implies Q = m \cdot c_p \cdot \Delta T$$</p></div>
+<small><b>Ecuación 7.</b> Deducción de la variación de temperatura asumiendo calores específicos constantes en un proceso isobárico.</small></li>
+<li><p><b>-Isotérmicos (a temperatura constante):</b> En este proceso, el sistema se expande o se comprime manteniendo la temperatura invariable ($dT = 0$). Como la presión cambia a lo largo de toda la trayectoria en función del volumen, para resolver la integral del trabajo debemos sustituir la presión empleando la ecuación de estado de los gases ideales ($p = m \cdot R \cdot T / V$). Al realizar la integración, el trabajo neto resulta en una función logarítmica que depende de la relación entre el volumen final e inicial.</p>
+
+<div class="flex-wrapper">
+  <p>$$W = \int_{V_i}^{V_f} p \cdot dV = \int_{V_i}^{V_f} \frac{m \cdot R \cdot T}{V} dV = m \cdot R \cdot T \cdot \ln\left(\frac{V_f}{V_i}\right)$$</p>
+</div>
+<small><b>Ecuación 8.</b> Resolución de la integral del trabajo para un proceso isotermo. Nótese que solo aplica a gases ideales.</small>
+
+<p>
+  La gran particularidad de este proceso en gases ideales se revela al analizar su energía de forma interna. Como ya hemos demostrado, la energía interna de un gas ideal depende única y exclusivamente de la temperatura. Al no haber variación térmica ($\Delta T = 0$), el cambio de energía interna es absolutamente nulo ($\Delta U = 0$). Por lo tanto, la primera ley de la termodinámica nos dicta que existe un equilibrio perfecto entre la energía mecánica y la térmica: todo el calor absorbido por el sistema se transforma íntegramente en trabajo de expansión, o viceversa.
+</p>
+
+<div class="flex-wrapper">
+  <p>$$\Delta U = 0 \implies Q = W = m \cdot R \cdot T \cdot \ln\left(\frac{V_f}{V_i}\right)$$</p>
+</div>
+
+<small><b>Ecuación 9.</b> Relaciones fundamentales para un proceso isotérmico. En los diagramas de presión-volumen ($P$-$V$), este camino se representa mediante una hipérbola equilátera (llamada isoterma). Para que un proceso real se aproxime a este ideal, el intercambio de calor con el entorno debe ser lo suficientemente lento como para mantener el equilibrio térmico en cada instante.</small></li></ul>
+
+<p>
+  En el mundo real, los procesos rara vez son perfectamente isotérmicos, isobáricos o adiabáticos. Para modelar el comportamiento real de los gases se utiliza el <b>proceso politrópico</b>, una generalización matemática gobernada por la relación $P \cdot V^n = \text{Cte}$. El exponente $n$ es un número adimensional que describe la relación entre la tasa de transferencia de calor y la tasa de trabajo en el sistema. Analicemos a qué caso particular corresponde cada valor de $n$:
+</p>
+
+<ul>
+  <li>
+    <b>Si $n = 0 \implies P \cdot V^0 = P = \text{Cte}$ (Proceso Isobárico):</b> Cualquier número elevado a cero es uno. Por lo tanto, la ecuación se reduce a presión constante. El sistema tiene total libertad para expandirse y transferir calor (como en los cilindros pistones).
+  </li>
+  <li>
+    <b>Si $n = 1 \implies P \cdot V^1 = \text{Cte}$ (Proceso Isotérmico en gases ideales):</b> Si recordamos la ecuación de los gases ideales ($P \cdot V = m \cdot R \cdot T$), para que el producto de la presión por el volumen sea una constante, la temperatura $T$ debe permanecer obligatoriamente fija. Para sustancias puras será necesario emplear la propia definición de entropía y las tablas:
+    <div class="flex-wrapper"><p>$$dS = \frac{\delta Q_{\text{rev}}}{T}$$</p></div>
+    <small><b>Ecuación 10.</b> Definición de calor en función de la entropía. Conociendo la temperatura del proceso, con las tablas se puede obtener la entropía.</small>
+  </li>
+  <li>
+    <b>Si $n = \gamma \implies P \cdot V^\gamma = \text{Cte}$ (Proceso Adiabático):</b> Aquí el exponente coincide exactamente con el coeficiente adiabático del gas ($\gamma = c_p / c_v$). Físicamente, representa el límite donde el aislamiento es perfecto y el intercambio de calor con el exterior es nulo ($Q = 0$).
+  </li>
+  <li>
+    <b>Si $n \to \infty \implies V = \text{Cte}$ (Proceso Isocórico):</b> Matemáticamente, si despejamos el volumen de la ecuación original quedando $P^{1/n} \cdot V = \text{Cte}$ y aplicamos el límite cuando $n$ tiende a infinito, el término de la presión se anula ($P^0 = 1$), lo que nos devuelve un volumen rigurosamente constante.
+
+<div class="flex-wrapper">
+  <p>$$W = \int_{V_i}^{V_f} P \cdot dV = \frac{P_f \cdot V_f - P_i \cdot V_i}{1 - n}$$</p>
+</div>
+
+<small><b>Ecuación 11.</b> Trabajo neto para cualquier proceso politrópico (válido para cualquier valor de $n$ excepto para $n = 1$, cuyo límite matemático coincide con la ecuación logarítmica del proceso isotérmico). En un diagrama $P$-$V$, variar el exponente $n$ modifica drásticamente la pendiente de la curva del proceso.</small>
+  </li>
+</ul>

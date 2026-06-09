@@ -67,7 +67,7 @@ function loadMathJax() {
                 displayMath: [['$$', '$$'], ['\\[', '\\]']]
             },
             svg: {
-                scale: 1.25,
+                scale: 1.0,
                 fontCache: 'global'
             }
         };
