@@ -207,3 +207,40 @@ $$\Delta S = \frac{\partial Q}{T}$$
 <small><b>Ecuación 11.</b> Trabajo neto para cualquier proceso politrópico (válido para cualquier valor de $n$ excepto para $n = 1$, cuyo límite matemático coincide con la ecuación logarítmica del proceso isotérmico). En un diagrama $P$-$V$, variar el exponente $n$ modifica drásticamente la pendiente de la curva del proceso.</small>
   </li>
 </ul>
+
+<h2>Los procesos termodinámicos en sistemas abiertos: </h2>
+<p>
+  Los procesos en sistemas abiertos se caracterizan por el hecho de que, aun pudiendo contener una cantidad de masa constante en régimen estacionario, no contienen siempre a la misma masa. De esta manera, los sistemas de este tipo poseen superficies de entrada y salida de materia, por lo que el objeto de estudio pasará de ser la sustancia en sí al estado del flujo en cada punto del espacio.
+</p>
+
+<p>
+  Si bien hasta ahora se ha trabajado empleando la energía interna ($U$) como variable de estado fundamental, de aquí en adelante la unidad fundamental será la entalpía ($H$). Esto se debe a que la entalpía también tiene en cuenta el trabajo que tiene que realizar el propio flujo a estudiar para ingresar, salir y ocupar su propio espacio en los conductos; una labor de contención mecánica que, en los sistemas cerrados, desempeñaban las paredes del recipiente de forma pasiva.
+</p>
+
+<p>
+  Este trabajo invisible necesario para mantener la masa en movimiento a través de las fronteras se denomina trabajo de flujo ($W_{\text{flujo}}$), y se define matemáticamente por el producto de la presión local y el volumen ocupado:
+</p>
+
+<div class="flex-wrapper">
+  <p>$$W_{\text{flujo}} = P \cdot V \implies H = U + P \cdot V$$</p>
+</div>
+
+<small><b>Ecuación 12.</b> Origen macroscópico de la entalpía ($H$) como la suma de la energía térmica interna ($U$) y la energía mecánica de flujo ($P \cdot V$). Al trabajar en sistemas abiertos, utilizar la entalpía nos permite omitir el cálculo explícito de las fuerzas de empuje en las tuberías de entrada y salida.</small>
+
+<h3>El Balance Global de Energía (Régimen Estacionario)</h3>
+<p>
+  Cuando analizamos un dispositivo en régimen estacionario (donde la masa total dentro del equipo no cambia con el tiempo), evaluamos las interacciones en forma de tasas temporales o flujos (utilizando la notación de punto $\dot{Q}$ y $\dot{W}$ para denotar potencias). La Primera Ley de la Termodinámica para un volumen de control se consolida de la siguiente forma:
+</p>
+
+<div class="flex-wrapper">
+  <p>$$\dot{Q} - \dot{W} =  \sum \dot{m}_s \cdot \left( h_s + \frac{v_s^2}{2} + g \cdot z_s \right) - \sum \dot{m}_e \cdot \left( h_e + \frac{v_e^2}{2} + g \cdot z_e \right)$$</p>
+</div>
+
+<small><b>Ecuación 13.</b> Conservación de la energía en un sistema abierto. Donde $\dot{m}$ representa el caudal másico, $h$ la entalpía específica, $v$ la velocidad del fluido, $g$ la gravedad y $z$ la altura geométrica. Nótese que para que el resultado venga dado en KJ al emplear el sistema internacional se debe dividir el término cinético y potencial gravitatorio entre mil.</small>
+
+<p>A parte de esta ecución será tambien necesario emplear el principio de continuidad para resolver sistemas con varias entradas o salidas y para garantizar que, en elementos como las toberas, el caudal de entrada iguale al de salida: </p>
+<div class="flex-wrapper">
+  <p>$$\dot{m}_e = \dot{m}_s \implies \frac{A_e \cdot v_e}{v_{\text{esp},e}} = \frac{A_s \cdot v_s}{v_{\text{esp},s}}$$</p>
+</div>
+<small><b>Ecuación 14.</b> Ecuación de continuidad con volúmenes específicos para una entrada y una salida.</small>
+<p>Con estas dos ecuaciones, y empleando las suposiciones adecuadas en conjunto con las tablas termodinámicas, es posible resolver los problemas de flujo. En la mayoría de casos las fuerzas másicas de la gravedad serán despreciables, se podrá asumir la adiabaticidad de toberas y difusores y no hará falta tener en cuenta la energía cinética en turbinas y compresores.</p>
