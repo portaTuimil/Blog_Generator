@@ -11,7 +11,7 @@ Sobre una introducción a la termodinámica y sus leyes:///A 22 de diciembre de 
     style="width: 100%; aspect-ratio: 16 / 9; border: none; display: block;"    
   ></iframe>
 </div>
-<small><b>Animation 1.</b> An animation of a steam engine I made with the JS canvas. Code <a href="https://github.com/portaTuimil/Steam_Engine">here</a>.</small>
+<small><b>Animación 1.</b> Animación de una máquina de vapor hecha por mí empleando el canvas de JS. Código <a href="https://github.com/portaTuimil/Steam_Engine">aquí</a>.</small>
 <p>Para comenzar a comprender esta materia es necesario conocer una serie de conceptos que serán útiles más adelante. </p>
 <h2>Conceptos básicos:</h2>
 <p>El estudio de la termodinámica parte de dos conceptos fundamentales, el calor ($Q$) y el trabajo ($W$). Estas dos magnitudes representan los dos tipos posibles de transferencia de energía, a saber, en forma de energía térmica y en forma de trabajo mecánico. Siendo que la energía siempre se conserva, la cantidad de trabajo o calor que un sistema dado reciba será su variación de energía interna, concepto que se discutirá más adelante.</p>
