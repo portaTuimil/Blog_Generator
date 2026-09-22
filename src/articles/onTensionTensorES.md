@@ -11,7 +11,7 @@ $$\begin{equation}
 <small><b>Matriz 1.</b> Matriz de tensiones en su forma corriente, la letra griega sigma ($\sigma$) denota tensión normal, tau ($\tau$) denota cortante (tensión de cizalladura).</small>
 <h2>Propiedades elementales</h2>
 <p>Lo primero a notar es que esta matriz, por su propio origen físico, siempre será simétrica. Por este motivo $\tau_{xy} = \tau_{yx}$ y así sucesivamente. Para ver porqué esto es así, fijémonos en la siguiente imagen:</p>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwt8H61aYog5wI1q69k0fImQVzz91yKAm_wQv99dyIaze5rftpDM0ykII&s=10" alt="Paralelepípedo unitario.">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwt8H61aYog5wI1q69k0fImQVzz91yKAm_wQv99dyIaze5rftpDM0ykII&s=10" alt="Paralelepípedo unitario." style="max-height:60vw; margin: 0 auto">
 
 <p>Si $\tau_{xy}$ genera una fuerza en sentido de $Y$ positivo, para que se cumpla que la suma de fuerzas sea cero en el eje $Y$ (condición que viene dada porque el paralelepípedo está inmóvil dentro de un sólido) es necesario que en el lado opuesto del paralelepípedo actúe una fuerza de igual módulo pero de sentido contrario. Ahora, si nos fijamos en esas dos fuerzas, reincido, de sentido contrario entre sí, nos daremos cuenta de que estas generan un momento antihorario (visto desde $Z$ positivo). De esta manera, para compensar este par y que la suma de momentos sea cero respecto al punto central del paralelepípedo, es necesario que $\tau_{yx}$ se dirija hacia el eje $X$ positivo y que, como en el caso anterior, en la cara opuesta haya una fuerza de sentido contrario. Esta demostración se conoce como el teorema de reciprocidad de las tensiones tangenciales de Cauchy.</p>
 
@@ -29,10 +29,11 @@ $$\begin{equation}
 $$P(\sigma) = -\sigma^3 + I_1 \sigma^2 - I_2 \sigma + I_3 = 0$$
 <small>Ecuación 1. El polinomio característico, cuyas raíces son los autovalores.</small>
 <p>Los coeficientes $I_1$, $I_2$ e $I_3$ reciben el nombre de invariantes del tensor de tensiones porque sus valores permanecen constantes ante cualquier rotación del sistema de ejes cartesianos. Sus expresiones en función de las componentes cartesianas arbitrarias y en función de las tensiones principales son las siguientes:</p>
-<div class="flex-wrapper"><p>$$I_1 = \text{tr}(\boldsymbol{\sigma}) = \sigma_x + \sigma_y + \sigma_z</p>
+<p>$$I_1 = tr(\sigma) = \sigma_x + \sigma_y + \sigma_z$$</p>
 
-<p>$$$$I_2 = \begin{vmatrix} \sigma_x & \tau_{xy} \\ \tau_{yx} & \sigma_y \end{vmatrix} + \begin{vmatrix} \sigma_y & \tau_{yz} \\ \tau_{zy} & \sigma_z \end{vmatrix} + \begin{vmatrix} \sigma_x & \tau_{xz} \\ \tau_{zx} & \sigma_z \end{vmatrix}$$</p>
+<p>$$I_2 = \begin{vmatrix} \sigma_x & \tau_{xy} \\ \tau_{yx} & \sigma_y \end{vmatrix} + \begin{vmatrix} \sigma_y & \tau_{yz} \\ \tau_{zy} & \sigma_z \end{vmatrix} + \begin{vmatrix} \sigma_x & \tau_{xz} \\ \tau_{zx} & \sigma_z \end{vmatrix}$$</p>
 
-<p>$$I_3 = \det(\boldsymbol{\sigma}) = \begin{vmatrix} \sigma_x & \tau_{xy} & \tau_{xz} \\ \tau_{yx} & \sigma_y & \tau_{yz} \\ \tau_{zx} & \tau_{zy} & \sigma_z \end{vmatrix}$$</p></div>
+<p>$$I_3 = \det(\sigma) = \begin{vmatrix} \sigma_x & \tau_{xy} & \tau_{xz} \\ \tau_{yx} & \sigma_y & \tau_{yz} \\ \tau_{zx} & \tau_{zy} & \sigma_z \end{vmatrix}$$</p>
+
 
 
