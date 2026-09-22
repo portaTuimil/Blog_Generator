@@ -35,6 +35,19 @@
             "displayES": 1,
             "displayEN": 0,
             "libraries": ["MathJax"]
-        }]
+        }],
+        "onTensionTensor":[
+            {
+            "titleES": "Sobre el tensor de tensiones:",
+            "titleEN": "On the Tension Tensor",
+            "descriptionES": "",
+            "descriptionEN": null,
+            "linkES": "https://portatuimil.github.io/Blog_Generator/?t=onTensionTensorES",
+            "linkEN": null,
+            "displayES": 1,
+            "displayEN": 0,
+            "libraries": ["MathJax"]
+            }
+        ]
     }]
 }
