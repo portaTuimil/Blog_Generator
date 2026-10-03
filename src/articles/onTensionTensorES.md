@@ -22,7 +22,7 @@ $$[T]_{123} = \begin{pmatrix} \sigma_1 & 0 & 0 \\ 0 & \sigma_2 & 0 \\ 0 & 0 & \s
 <blockquote>Sean cuales sean los esfuerzos a los que se somete un punto de un sólido, siempre existirán en él tres direcciones ortogonales en las cuales la tensión resultante es puramente normal y, por lo tanto, la tensión de cortadura o tangencial es nula ($\tau = 0$).</blockquote>
 <small><b>Definición 1. </b> Quedan definidas las direcciones principales de una matriz de tensiones, que son aquellas direcciones normales a los planos cuya tensión es puramente normal.</small>
 
-<h3>Deducciones a partir de la diagonalicibilidad dela matriz:</h3>
+<h3>Deducciones a partir de la diagonalicibilidad de la matriz:</h3>
 <p>Es sabido que para encontrar los autovalores se impone que aplicar la transformación a un vector dado sea lo mismo que escalarlo por una constante ($mV = \lambda V$). Al desarrollar esta expresión queda que los autovalores se pueden sacar de resolver $\det(M-\lambda I)=0$  y los vectores propios ($A_{1}$, $A_{2}$ y $A_{3}$) de resolver $(M-\lambda I)V =0$. En una matriz 3x3 esta expresión da lugar al polinomio característico y llega a lo siguiente:</p>
 
 $$P(\sigma) = -\sigma^3 + I_1 \sigma^2 - I_2 \sigma + I_3 = 0$$
