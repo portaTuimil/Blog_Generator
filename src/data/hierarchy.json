@@ -30,12 +30,12 @@
             "displayEN": 0,
             "libraries": ["MathJax"]
         }],
-        "onTensionTensor":[
+        "onStressTensor":[
             {
-            "titleES": "Sobre el tensor de tensiones:",
-            "titleEN": "On the Tension Tensor",
-            "descriptionES": "",
-            "descriptionEN": null,
+            "titleES": "Sobre las propiedades del tensor de tensiones:",
+            "titleEN": "On the properties of the stress tensor",
+            "descriptionES": "La propia naturaleza de las deformaciones en un medio continuo da lugar a una serie de propiedades algebraicas de gran interés para el cálculo. Conocer estas propiedades asociadas puede repercutir en un mejor entendimiento de los sólidos deformables de la misma maner que una correcta comprensión de estos últimos facilita el análisis algebraico.",
+            "descriptionEN": "The very nature of deformations in a continuous medium gives rise to a series of algebraic properties of great interest for calculations. Understanding these associated properties can lead to a better understanding of deformable solids, just as understanding these solids helps elucidate their algebraic properties.",
             "displayES": 1,
             "displayEN": 0,
             "libraries": ["MathJax"]
